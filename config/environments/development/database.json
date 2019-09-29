@@ -1,0 +1,19 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "database": "nbc-strapi",
+        "host": "127.0.0.1",
+        "srv": false,
+        "port": 27017,
+        "username": "northlakebible",
+        "password": "6whL0y21Z6cWr9Ip"
+      },
+      "options": {
+        "authenticationDatabase": "admin"
+      }
+    }
+  }
+}
