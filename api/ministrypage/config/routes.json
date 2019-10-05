@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ministrypages",
+      "handler": "Ministrypage.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ministrypages/count",
+      "handler": "Ministrypage.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ministrypages/:id",
+      "handler": "Ministrypage.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ministrypages",
+      "handler": "Ministrypage.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ministrypages/:id",
+      "handler": "Ministrypage.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ministrypages/:id",
+      "handler": "Ministrypage.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
