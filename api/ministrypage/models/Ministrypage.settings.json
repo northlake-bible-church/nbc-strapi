@@ -1,12 +1,15 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "ministrypage",
   "info": {
     "name": "ministrypage",
     "description": ""
   },
   "options": {
-    "timestamps": true
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
   },
   "attributes": {
     "Title": {
@@ -22,6 +25,9 @@
     },
     "Article": {
       "type": "richtext"
+    },
+    "ExpireDate": {
+      "type": "date"
     }
   }
 }
