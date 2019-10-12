@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Lifecycle callbacks for the `Ministrypage` model.
+ * Lifecycle callbacks for the `Articlepage` model.
  */
 
 module.exports = {

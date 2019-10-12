@@ -2,7 +2,7 @@
   "connection": "default",
   "collectionName": "ministrypage",
   "info": {
-    "name": "ministrypage",
+    "name": "articlepage",
     "description": ""
   },
   "options": {
@@ -13,21 +13,30 @@
   },
   "attributes": {
     "Title": {
-      "type": "string"
+      "type": "string",
+      "unique": true,
+      "required": true
     },
     "Image": {
       "model": "file",
       "via": "related",
       "plugin": "upload"
     },
-    "PublishPage": {
-      "type": "date"
+    "PublishDate": {
+      "type": "date",
+      "required": true
     },
     "Article": {
       "type": "richtext"
     },
-    "ExpireDate": {
+    "ExpiredDate": {
       "type": "date"
+    },
+    "url": {
+      "maxLength": 100,
+      "required": true,
+      "unique": true,
+      "type": "string"
     }
   }
 }
