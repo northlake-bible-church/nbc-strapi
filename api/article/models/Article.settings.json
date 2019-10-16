@@ -2,7 +2,7 @@
   "connection": "default",
   "collectionName": "ministrypage",
   "info": {
-    "name": "articlepage",
+    "name": "article",
     "description": ""
   },
   "options": {
@@ -32,10 +32,9 @@
     "ExpiredDate": {
       "type": "date"
     },
-    "url": {
-      "maxLength": 100,
-      "required": true,
+    "link": {
       "unique": true,
+      "required": true,
       "type": "string"
     }
   }
