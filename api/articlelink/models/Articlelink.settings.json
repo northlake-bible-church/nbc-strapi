@@ -1,0 +1,24 @@
+{
+  "connection": "default",
+  "collectionName": "articlelink",
+  "info": {
+    "name": "articlelink",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "LinkUrl": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "articles": {
+      "collection": "article"
+    }
+  }
+}

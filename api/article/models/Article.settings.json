@@ -1,6 +1,6 @@
 {
   "connection": "default",
-  "collectionName": "ministrypage",
+  "collectionName": "articles",
   "info": {
     "name": "article",
     "description": ""
@@ -32,7 +32,7 @@
     "ExpiredDate": {
       "type": "date"
     },
-    "link": {
+    "Link": {
       "unique": true,
       "required": true,
       "type": "string"
