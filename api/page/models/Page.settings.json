@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "page",
+  "info": {
+    "name": "page",
+    "description": "Default container for a page which may contain Articles, Links, etc."
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "Title": {
+      "required": true,
+      "type": "string"
+    },
+    "Link": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "articles": {
+      "collection": "article"
+    },
+    "PublishDate": {
+      "required": true,
+      "type": "date"
+    },
+    "ExpiredDate": {
+      "type": "date"
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}

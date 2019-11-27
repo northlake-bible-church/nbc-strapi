@@ -31,11 +31,6 @@
     },
     "ExpiredDate": {
       "type": "date"
-    },
-    "Link": {
-      "unique": true,
-      "required": true,
-      "type": "string"
     }
   }
 }
