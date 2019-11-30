@@ -16,13 +16,10 @@
       "required": true,
       "type": "string"
     },
-    "Link": {
+    "Url": {
       "unique": true,
       "required": true,
       "type": "string"
-    },
-    "articles": {
-      "collection": "article"
     },
     "PublishDate": {
       "required": true,
@@ -35,6 +32,20 @@
       "model": "file",
       "via": "related",
       "plugin": "upload"
+    },
+    "pages": {
+      "collection": "page",
+      "via": "page"
+    },
+    "page": {
+      "model": "page",
+      "via": "pages"
+    },
+    "articles": {
+      "collection": "article"
+    },
+    "article": {
+      "model": "article"
     }
   }
 }

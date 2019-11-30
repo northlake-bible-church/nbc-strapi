@@ -17,11 +17,6 @@
       "unique": true,
       "required": true
     },
-    "Image": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload"
-    },
     "PublishDate": {
       "type": "date",
       "required": true
