@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sitesettingtypes",
+      "handler": "Sitesettingtype.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sitesettingtypes/count",
+      "handler": "Sitesettingtype.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sitesettingtypes/:id",
+      "handler": "Sitesettingtype.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sitesettingtypes",
+      "handler": "Sitesettingtype.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sitesettingtypes/:id",
+      "handler": "Sitesettingtype.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sitesettingtypes/:id",
+      "handler": "Sitesettingtype.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

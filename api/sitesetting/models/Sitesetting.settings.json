@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "sitesetting",
+  "info": {
+    "name": "sitesetting",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "Name": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "Url": {
+      "type": "string"
+    },
+    "Type": {
+      "model": "sitesettingtype"
+    },
+    "ImageUrl": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sitesettings",
+      "handler": "Sitesetting.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sitesettings/count",
+      "handler": "Sitesetting.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sitesettings/:id",
+      "handler": "Sitesetting.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sitesettings",
+      "handler": "Sitesetting.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sitesettings/:id",
+      "handler": "Sitesetting.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sitesettings/:id",
+      "handler": "Sitesetting.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
