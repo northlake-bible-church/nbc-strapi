@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "teacher",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "FirstName": {
+      "required": true,
+      "type": "string"
+    },
+    "LastName": {
+      "required": true,
+      "type": "string"
+    },
+    "Picture": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Biography": {
+      "type": "richtext"
+    }
+  }
+}
