@@ -1,0 +1,42 @@
+{
+  "connection": "default",
+  "collectionName": "biblebook",
+  "info": {
+    "name": "biblebook",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "BookName": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "TotalChapters": {
+      "type": "integer",
+      "required": true
+    },
+    "OsisID": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "BookID": {
+      "type": "integer",
+      "unique": true,
+      "required": true
+    },
+    "Volume": {
+      "enum": [
+        "NT",
+        "OT"
+      ],
+      "type": "enumeration"
+    }
+  }
+}

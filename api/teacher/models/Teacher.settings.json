@@ -24,6 +24,10 @@
     },
     "Biography": {
       "type": "richtext"
+    },
+    "message": {
+      "model": "message",
+      "via": "teacher"
     }
   }
 }

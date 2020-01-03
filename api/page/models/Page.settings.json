@@ -46,6 +46,10 @@
     },
     "article": {
       "model": "article"
+    },
+    "messages": {
+      "collection": "message",
+      "via": "pages"
     }
   }
 }

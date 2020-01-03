@@ -1,0 +1,37 @@
+{
+  "connection": "default",
+  "collectionName": "seriesset",
+  "info": {
+    "name": "seriesset",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "Title": {
+      "required": true,
+      "type": "string"
+    },
+    "teachers": {
+      "collection": "teacher"
+    },
+    "SeriesStart": {
+      "type": "date",
+      "required": true
+    },
+    "SeriesEnd": {
+      "type": "date"
+    },
+    "biblebooks": {
+      "collection": "biblebook"
+    },
+    "message": {
+      "model": "message",
+      "via": "seriesset"
+    }
+  }
+}

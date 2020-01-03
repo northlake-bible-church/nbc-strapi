@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/biblebooks",
+      "handler": "Biblebook.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/biblebooks/count",
+      "handler": "Biblebook.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/biblebooks/:id",
+      "handler": "Biblebook.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/biblebooks",
+      "handler": "Biblebook.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/biblebooks/:id",
+      "handler": "Biblebook.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/biblebooks/:id",
+      "handler": "Biblebook.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

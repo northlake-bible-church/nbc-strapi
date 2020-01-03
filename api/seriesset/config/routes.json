@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/seriessets",
+      "handler": "Seriesset.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/seriessets/count",
+      "handler": "Seriesset.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/seriessets/:id",
+      "handler": "Seriesset.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/seriessets",
+      "handler": "Seriesset.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/seriessets/:id",
+      "handler": "Seriesset.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/seriessets/:id",
+      "handler": "Seriesset.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
