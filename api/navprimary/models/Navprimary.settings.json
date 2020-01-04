@@ -30,6 +30,10 @@
       "required": true,
       "default": true,
       "type": "boolean"
+    },
+    "navsecondaries": {
+      "collection": "navsecondary",
+      "via": "navprimary"
     }
   }
 }

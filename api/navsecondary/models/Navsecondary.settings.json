@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "navsecondary",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "Path": {
+      "type": "string"
+    },
+    "Order": {
+      "type": "integer",
+      "unique": true,
+      "required": true
+    },
+    "Enabled": {
+      "default": true,
+      "required": true,
+      "type": "boolean"
+    },
+    "navprimary": {
+      "model": "navprimary",
+      "via": "navsecondaries"
+    }
+  }
+}
