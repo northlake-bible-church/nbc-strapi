@@ -32,6 +32,10 @@
     "message": {
       "model": "message",
       "via": "seriesset"
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
     }
   }
 }

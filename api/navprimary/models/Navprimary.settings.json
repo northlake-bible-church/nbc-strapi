@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "navprimary",
+  "info": {
+    "name": "navprimary",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "path": {
+      "unique": true,
+      "type": "string"
+    },
+    "Order": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "Enabled": {
+      "required": true,
+      "default": true,
+      "type": "boolean"
+    }
+  }
+}
