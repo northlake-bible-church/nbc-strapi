@@ -26,8 +26,8 @@
       "type": "richtext"
     },
     "message": {
-      "model": "message",
-      "via": "teacher"
+      "via": "teacher",
+      "model": "message"
     }
   }
 }

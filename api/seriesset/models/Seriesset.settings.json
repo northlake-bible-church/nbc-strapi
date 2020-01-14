@@ -30,8 +30,8 @@
       "collection": "biblebook"
     },
     "message": {
-      "model": "message",
-      "via": "seriesset"
+      "via": "seriesset",
+      "model": "message"
     },
     "Description": {
       "type": "richtext",

@@ -55,7 +55,8 @@
     "MessageSlides": {
       "model": "file",
       "via": "related",
-      "plugin": "upload"
+      "plugin": "upload",
+      "required": false
     },
     "pages": {
       "collection": "page",
@@ -65,6 +66,9 @@
     "seriesset": {
       "model": "seriesset",
       "via": "message"
+    },
+    "PodcastLink": {
+      "type": "string"
     }
   }
 }

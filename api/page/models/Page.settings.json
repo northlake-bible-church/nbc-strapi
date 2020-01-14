@@ -12,11 +12,11 @@
     ]
   },
   "attributes": {
-    "Title": {
+    "PageTitle": {
       "required": true,
       "type": "string"
     },
-    "Url": {
+    "PageUrl": {
       "unique": true,
       "required": true,
       "type": "string"
@@ -31,7 +31,8 @@
     "Image": {
       "model": "file",
       "via": "related",
-      "plugin": "upload"
+      "plugin": "upload",
+      "required": false
     },
     "pages": {
       "collection": "page",
@@ -41,15 +42,13 @@
       "model": "page",
       "via": "pages"
     },
-    "articles": {
-      "collection": "article"
-    },
-    "article": {
-      "model": "article"
-    },
     "messages": {
-      "collection": "message",
-      "via": "pages"
+      "via": "pages",
+      "collection": "message"
+    },
+    "PageContent": {
+      "type": "richtext",
+      "required": true
     }
   }
 }
