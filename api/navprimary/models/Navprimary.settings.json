@@ -32,8 +32,8 @@
       "type": "boolean"
     },
     "navsecondaries": {
-      "collection": "navsecondary",
-      "via": "navprimary"
+      "via": "navprimary",
+      "collection": "navsecondary"
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "navsecondary",
   "info": {
     "name": "navsecondary",
     "description": ""
@@ -19,7 +19,7 @@
     },
     "Order": {
       "type": "integer",
-      "unique": true,
+      "unique": false,
       "required": true
     },
     "Enabled": {
