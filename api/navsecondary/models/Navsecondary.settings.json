@@ -17,11 +17,6 @@
     "Path": {
       "type": "string"
     },
-    "Order": {
-      "type": "integer",
-      "unique": false,
-      "required": true
-    },
     "Enabled": {
       "default": true,
       "required": true,
@@ -30,6 +25,10 @@
     "navprimary": {
       "model": "navprimary",
       "via": "navsecondaries"
+    },
+    "NavOrder": {
+      "type": "integer",
+      "required": true
     }
   }
 }
