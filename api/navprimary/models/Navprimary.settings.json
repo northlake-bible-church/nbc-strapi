@@ -18,7 +18,7 @@
       "required": true
     },
     "path": {
-      "unique": true,
+      "unique": false,
       "type": "string"
     },
     "Order": {
@@ -32,8 +32,8 @@
       "type": "boolean"
     },
     "navsecondaries": {
-      "via": "navprimary",
-      "collection": "navsecondary"
+      "collection": "navsecondary",
+      "via": "navprimary"
     }
   }
 }

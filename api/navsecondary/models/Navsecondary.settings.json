@@ -23,8 +23,8 @@
       "type": "boolean"
     },
     "navprimary": {
-      "model": "navprimary",
-      "via": "navsecondaries"
+      "via": "navsecondaries",
+      "model": "navprimary"
     },
     "NavOrder": {
       "type": "integer",
