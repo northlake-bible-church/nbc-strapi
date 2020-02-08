@@ -1,0 +1,27 @@
+{
+  "info": {
+    "name": "Announcement"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "AnnouncementTitle": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    },
+    "PublishedDate": {
+      "type": "date"
+    },
+    "ExpiredDate": {
+      "type": "date"
+    }
+  },
+  "connection": "default",
+  "collectionName": "announcements"
+}

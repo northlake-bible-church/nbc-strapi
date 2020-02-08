@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/carousels",
-      "handler": "Carousel.find",
+      "path": "/announcements",
+      "handler": "announcement.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/carousels/count",
-      "handler": "Carousel.count",
+      "path": "/announcements/count",
+      "handler": "announcement.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/carousels/:id",
-      "handler": "Carousel.findOne",
+      "path": "/announcements/:id",
+      "handler": "announcement.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/carousels",
-      "handler": "Carousel.create",
+      "path": "/announcements",
+      "handler": "announcement.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/carousels/:id",
-      "handler": "Carousel.update",
+      "path": "/announcements/:id",
+      "handler": "announcement.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/carousels/:id",
-      "handler": "Carousel.delete",
+      "path": "/announcements/:id",
+      "handler": "announcement.delete",
       "config": {
         "policies": []
       }
