@@ -13,7 +13,7 @@
   },
   "attributes": {
     "Name": {
-      "unique": true,
+      "unique": false,
       "required": true,
       "type": "string"
     },

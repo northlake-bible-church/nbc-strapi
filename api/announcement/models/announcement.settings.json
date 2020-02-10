@@ -1,4 +1,6 @@
 {
+  "connection": "default",
+  "collectionName": "announcements",
   "info": {
     "name": "Announcement"
   },
@@ -20,8 +22,9 @@
     },
     "ExpiredDate": {
       "type": "date"
+    },
+    "SlideUrl": {
+      "type": "string"
     }
-  },
-  "connection": "default",
-  "collectionName": "announcements"
+  }
 }

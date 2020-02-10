@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/announcements": {
+    "/slides": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Announcement"
+                    "$ref": "#/components/schemas/Slide"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Announcement"
+          "Slide"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Announcement"
+                  "$ref": "#/components/schemas/Slide"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Announcement"
+          "Slide"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewAnnouncement"
+                "$ref": "#/components/schemas/NewSlide"
               }
             }
           }
         }
       }
     },
-    "/announcements/count": {
+    "/slides/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Announcement"
+          "Slide"
         ],
         "parameters": []
       }
     },
-    "/announcements/{id}": {
+    "/slides/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Announcement"
+                  "$ref": "#/components/schemas/Slide"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Announcement"
+          "Slide"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Announcement"
+                  "$ref": "#/components/schemas/Slide"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Announcement"
+          "Slide"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewAnnouncement"
+                "$ref": "#/components/schemas/NewSlide"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Announcement"
+          "Slide"
         ],
         "parameters": [
           {
@@ -514,52 +514,98 @@
   },
   "components": {
     "schemas": {
-      "Announcement": {
+      "Slide": {
         "required": [
-          "id",
-          "AnnouncementTitle",
-          "Description"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "AnnouncementTitle": {
+          "SlideName": {
             "type": "string"
           },
-          "Description": {
+          "SlideImage": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              }
+            }
+          },
+          "AlternativeText": {
             "type": "string"
           },
-          "PublishedDate": {
-            "type": "string"
-          },
-          "ExpiredDate": {
+          "Caption": {
             "type": "string"
           },
           "SlideUrl": {
+            "type": "string"
+          },
+          "PublishDate": {
+            "type": "string"
+          },
+          "ExpiredDate": {
             "type": "string"
           }
         }
       },
-      "NewAnnouncement": {
-        "required": [
-          "AnnouncementTitle",
-          "Description"
-        ],
+      "NewSlide": {
         "properties": {
-          "AnnouncementTitle": {
+          "SlideName": {
             "type": "string"
           },
-          "Description": {
+          "AlternativeText": {
             "type": "string"
           },
-          "PublishedDate": {
-            "type": "string"
-          },
-          "ExpiredDate": {
+          "Caption": {
             "type": "string"
           },
           "SlideUrl": {
+            "type": "string"
+          },
+          "PublishDate": {
+            "type": "string"
+          },
+          "ExpiredDate": {
             "type": "string"
           }
         }
@@ -568,7 +614,7 @@
   },
   "tags": [
     {
-      "name": "Announcement"
+      "name": "Slide"
     }
   ]
 }
