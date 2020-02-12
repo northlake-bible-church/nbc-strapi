@@ -23,7 +23,19 @@
     "ExpiredDate": {
       "type": "date"
     },
-    "SlideUrl": {
+    "EventEndDate": {
+      "type": "date"
+    },
+    "EventStartDate": {
+      "type": "date"
+    },
+    "AnnouncementsImage": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "AnnouncementLink": {
       "type": "string"
     }
   }

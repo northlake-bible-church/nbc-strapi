@@ -536,7 +536,59 @@
           "ExpiredDate": {
             "type": "string"
           },
-          "SlideUrl": {
+          "EventEndDate": {
+            "type": "string"
+          },
+          "EventStartDate": {
+            "type": "string"
+          },
+          "AnnouncementsImage": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              }
+            }
+          },
+          "AnnouncementLink": {
             "type": "string"
           }
         }
@@ -559,7 +611,13 @@
           "ExpiredDate": {
             "type": "string"
           },
-          "SlideUrl": {
+          "EventEndDate": {
+            "type": "string"
+          },
+          "EventStartDate": {
+            "type": "string"
+          },
+          "AnnouncementLink": {
             "type": "string"
           }
         }

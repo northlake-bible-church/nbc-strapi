@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "02/08/2020 5:04:58 PM"
+    "x-generation-date": "02/11/2020 9:39:15 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -8356,7 +8356,59 @@
           "ExpiredDate": {
             "type": "string"
           },
-          "SlideUrl": {
+          "EventEndDate": {
+            "type": "string"
+          },
+          "EventStartDate": {
+            "type": "string"
+          },
+          "AnnouncementsImage": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              }
+            }
+          },
+          "AnnouncementLink": {
             "type": "string"
           }
         }
@@ -8379,7 +8431,13 @@
           "ExpiredDate": {
             "type": "string"
           },
-          "SlideUrl": {
+          "EventEndDate": {
+            "type": "string"
+          },
+          "EventStartDate": {
+            "type": "string"
+          },
+          "AnnouncementLink": {
             "type": "string"
           }
         }
