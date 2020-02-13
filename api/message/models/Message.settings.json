@@ -16,9 +16,10 @@
       "type": "string",
       "required": true
     },
-    "teacher": {
-      "model": "teacher",
-      "via": "message"
+    "teachers": {
+      "collection": "teacher",
+      "via": "messages",
+      "dominant": true
     },
     "biblebooks": {
       "collection": "biblebook"
@@ -73,6 +74,10 @@
       "via": "related",
       "plugin": "upload",
       "required": false
+    },
+    "message_type": {
+      "model": "message-type",
+      "via": "messages"
     }
   }
 }

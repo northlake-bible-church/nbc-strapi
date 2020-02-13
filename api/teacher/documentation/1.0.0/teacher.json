@@ -579,63 +579,72 @@
           "Biography": {
             "type": "string"
           },
-          "message": {
-            "required": [
-              "id",
-              "MessageTitle",
-              "MessageDate"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "MessageTitle": {
-                "type": "string"
-              },
-              "teacher": {
-                "type": "string"
-              },
-              "biblebooks": {
-                "type": "string"
-              },
-              "ChapterStart": {
-                "type": "integer"
-              },
-              "ChapterEnd": {
-                "type": "integer"
-              },
-              "VerseStart": {
-                "type": "integer"
-              },
-              "VerseEnd": {
-                "type": "integer"
-              },
-              "MessageDate": {
-                "type": "string"
-              },
-              "PublishDate": {
-                "type": "string"
-              },
-              "MessageSlides": {
-                "type": "string"
-              },
-              "pages": {
-                "type": "array",
-                "items": {
+          "messages": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "MessageTitle",
+                "MessageDate"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "MessageTitle": {
+                  "type": "string"
+                },
+                "teachers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "biblebooks": {
+                  "type": "string"
+                },
+                "ChapterStart": {
+                  "type": "integer"
+                },
+                "ChapterEnd": {
+                  "type": "integer"
+                },
+                "VerseStart": {
+                  "type": "integer"
+                },
+                "VerseEnd": {
+                  "type": "integer"
+                },
+                "MessageDate": {
+                  "type": "string"
+                },
+                "PublishDate": {
+                  "type": "string"
+                },
+                "MessageSlides": {
+                  "type": "string"
+                },
+                "pages": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "seriesset": {
+                  "type": "string"
+                },
+                "PodcastLink": {
+                  "type": "string"
+                },
+                "MessageAudio": {
+                  "type": "string"
+                },
+                "MessageVideo": {
+                  "type": "string"
+                },
+                "message_type": {
                   "type": "string"
                 }
-              },
-              "seriesset": {
-                "type": "string"
-              },
-              "PodcastLink": {
-                "type": "string"
-              },
-              "MessageAudio": {
-                "type": "string"
-              },
-              "MessageVideo": {
-                "type": "string"
               }
             }
           }
@@ -656,8 +665,11 @@
           "Biography": {
             "type": "string"
           },
-          "message": {
-            "type": "string"
+          "messages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       }

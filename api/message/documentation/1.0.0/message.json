@@ -527,30 +527,36 @@
           "MessageTitle": {
             "type": "string"
           },
-          "teacher": {
-            "required": [
-              "id",
-              "FirstName",
-              "LastName"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "FirstName": {
-                "type": "string"
-              },
-              "LastName": {
-                "type": "string"
-              },
-              "Picture": {
-                "type": "string"
-              },
-              "Biography": {
-                "type": "string"
-              },
-              "message": {
-                "type": "string"
+          "teachers": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "FirstName",
+                "LastName"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "FirstName": {
+                  "type": "string"
+                },
+                "LastName": {
+                  "type": "string"
+                },
+                "Picture": {
+                  "type": "string"
+                },
+                "Biography": {
+                  "type": "string"
+                },
+                "messages": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
               }
             }
           },
@@ -825,6 +831,25 @@
                 "type": "string"
               }
             }
+          },
+          "message_type": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "MessageTypeName": {
+                "type": "string"
+              },
+              "messages": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -837,8 +862,11 @@
           "MessageTitle": {
             "type": "string"
           },
-          "teacher": {
-            "type": "string"
+          "teachers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "biblebooks": {
             "type": "string"
@@ -871,6 +899,9 @@
             "type": "string"
           },
           "PodcastLink": {
+            "type": "string"
+          },
+          "message_type": {
             "type": "string"
           }
         }

@@ -696,8 +696,11 @@
                 "MessageTitle": {
                   "type": "string"
                 },
-                "teacher": {
-                  "type": "string"
+                "teachers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "biblebooks": {
                   "type": "string"
@@ -739,6 +742,9 @@
                   "type": "string"
                 },
                 "MessageVideo": {
+                  "type": "string"
+                },
+                "message_type": {
                   "type": "string"
                 }
               }

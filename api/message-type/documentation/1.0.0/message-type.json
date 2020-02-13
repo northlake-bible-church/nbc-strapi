@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/seriessets": {
+    "/message-types": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -10,9 +10,10 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Seriesset"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
                   }
                 }
               }
@@ -51,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Seriesset"
+          "Message-type"
         ],
         "parameters": [
           {
@@ -201,72 +202,9 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Seriesset"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Seriesset"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewSeriesset"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/seriessets/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
                   "properties": {
-                    "count": {
-                      "type": "integer"
+                    "foo": {
+                      "type": "string"
                     }
                   }
                 }
@@ -306,12 +244,22 @@
         },
         "summary": "",
         "tags": [
-          "Seriesset"
+          "Message-type"
         ],
-        "parameters": []
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewMessage-type"
+              }
+            }
+          }
+        }
       }
     },
-    "/seriessets/{id}": {
+    "/message-types/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +269,11 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Seriesset"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -359,7 +311,64 @@
         },
         "summary": "",
         "tags": [
-          "Seriesset"
+          "Message-type"
+        ],
+        "parameters": []
+      }
+    },
+    "/message-types/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Message-type"
         ],
         "parameters": [
           {
@@ -383,7 +392,11 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Seriesset"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -421,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Seriesset"
+          "Message-type"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewSeriesset"
+                "$ref": "#/components/schemas/NewMessage-type"
               }
             }
           }
@@ -495,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Seriesset"
+          "Message-type"
         ],
         "parameters": [
           {
@@ -514,191 +527,102 @@
   },
   "components": {
     "schemas": {
-      "Seriesset": {
+      "Message-type": {
         "required": [
-          "id",
-          "Title",
-          "SeriesStart",
-          "Description"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "Title": {
+          "MessageTypeName": {
             "type": "string"
           },
-          "teachers": {
-            "required": [
-              "id",
-              "FirstName",
-              "LastName"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "FirstName": {
-                "type": "string"
-              },
-              "LastName": {
-                "type": "string"
-              },
-              "Picture": {
-                "type": "string"
-              },
-              "Biography": {
-                "type": "string"
-              },
-              "messages": {
-                "type": "array",
-                "items": {
+          "messages": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "MessageTitle",
+                "MessageDate"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "MessageTitle": {
+                  "type": "string"
+                },
+                "teachers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "biblebooks": {
+                  "type": "string"
+                },
+                "ChapterStart": {
+                  "type": "integer"
+                },
+                "ChapterEnd": {
+                  "type": "integer"
+                },
+                "VerseStart": {
+                  "type": "integer"
+                },
+                "VerseEnd": {
+                  "type": "integer"
+                },
+                "MessageDate": {
+                  "type": "string"
+                },
+                "PublishDate": {
+                  "type": "string"
+                },
+                "MessageSlides": {
+                  "type": "string"
+                },
+                "pages": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "seriesset": {
+                  "type": "string"
+                },
+                "PodcastLink": {
+                  "type": "string"
+                },
+                "MessageAudio": {
+                  "type": "string"
+                },
+                "MessageVideo": {
+                  "type": "string"
+                },
+                "message_type": {
                   "type": "string"
                 }
               }
             }
-          },
-          "SeriesStart": {
-            "type": "string"
-          },
-          "SeriesEnd": {
-            "type": "string"
-          },
-          "biblebooks": {
-            "required": [
-              "id",
-              "BookName",
-              "TotalChapters",
-              "OsisID",
-              "BookID"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "BookName": {
-                "type": "string"
-              },
-              "TotalChapters": {
-                "type": "integer"
-              },
-              "OsisID": {
-                "type": "string"
-              },
-              "BookID": {
-                "type": "integer"
-              },
-              "Volume": {
-                "type": "string"
-              }
-            }
-          },
-          "message": {
-            "required": [
-              "id",
-              "MessageTitle",
-              "MessageDate"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "MessageTitle": {
-                "type": "string"
-              },
-              "teachers": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "biblebooks": {
-                "type": "string"
-              },
-              "ChapterStart": {
-                "type": "integer"
-              },
-              "ChapterEnd": {
-                "type": "integer"
-              },
-              "VerseStart": {
-                "type": "integer"
-              },
-              "VerseEnd": {
-                "type": "integer"
-              },
-              "MessageDate": {
-                "type": "string"
-              },
-              "PublishDate": {
-                "type": "string"
-              },
-              "MessageSlides": {
-                "type": "string"
-              },
-              "pages": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "seriesset": {
-                "type": "string"
-              },
-              "PodcastLink": {
-                "type": "string"
-              },
-              "MessageAudio": {
-                "type": "string"
-              },
-              "MessageVideo": {
-                "type": "string"
-              },
-              "message_type": {
-                "type": "string"
-              }
-            }
-          },
-          "Description": {
-            "type": "string"
           }
         }
       },
-      "NewSeriesset": {
-        "required": [
-          "Title",
-          "SeriesStart",
-          "Description"
-        ],
+      "NewMessage-type": {
         "properties": {
-          "Title": {
+          "MessageTypeName": {
             "type": "string"
           },
-          "teachers": {
-            "type": "string"
-          },
-          "SeriesStart": {
-            "type": "string"
-          },
-          "SeriesEnd": {
-            "type": "string"
-          },
-          "biblebooks": {
-            "type": "string"
-          },
-          "message": {
-            "type": "string"
-          },
-          "Description": {
-            "type": "string"
+          "messages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       }
     }
   },
-  "tags": [
-    {
-      "name": "Seriesset"
-    }
-  ]
+  "tags": []
 }

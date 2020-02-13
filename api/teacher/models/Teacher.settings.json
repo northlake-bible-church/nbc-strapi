@@ -25,9 +25,9 @@
     "Biography": {
       "type": "richtext"
     },
-    "message": {
-      "via": "teacher",
-      "model": "message"
+    "messages": {
+      "via": "teachers",
+      "collection": "message"
     }
   }
 }
