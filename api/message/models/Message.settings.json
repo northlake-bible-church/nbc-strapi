@@ -20,11 +20,6 @@
       "model": "teacher",
       "via": "message"
     },
-    "AudioLink": {
-      "unique": true,
-      "required": true,
-      "type": "string"
-    },
     "biblebooks": {
       "collection": "biblebook"
     },
@@ -49,9 +44,6 @@
     "PublishDate": {
       "type": "date"
     },
-    "VideoLink": {
-      "type": "string"
-    },
     "MessageSlides": {
       "model": "file",
       "via": "related",
@@ -69,6 +61,18 @@
     },
     "PodcastLink": {
       "type": "string"
+    },
+    "SermonAudio": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "SermonVideo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
     }
   }
 }

@@ -518,7 +518,6 @@
         "required": [
           "id",
           "MessageTitle",
-          "AudioLink",
           "MessageDate"
         ],
         "properties": {
@@ -554,9 +553,6 @@
                 "type": "string"
               }
             }
-          },
-          "AudioLink": {
-            "type": "string"
           },
           "biblebooks": {
             "required": [
@@ -603,9 +599,6 @@
             "type": "string"
           },
           "PublishDate": {
-            "type": "string"
-          },
-          "VideoLink": {
             "type": "string"
           },
           "MessageSlides": {
@@ -740,13 +733,104 @@
           },
           "PodcastLink": {
             "type": "string"
+          },
+          "SermonAudio": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              }
+            }
+          },
+          "SermonVideo": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              }
+            }
           }
         }
       },
       "NewMessage": {
         "required": [
           "MessageTitle",
-          "AudioLink",
           "MessageDate"
         ],
         "properties": {
@@ -754,9 +838,6 @@
             "type": "string"
           },
           "teacher": {
-            "type": "string"
-          },
-          "AudioLink": {
             "type": "string"
           },
           "biblebooks": {
@@ -778,9 +859,6 @@
             "type": "string"
           },
           "PublishDate": {
-            "type": "string"
-          },
-          "VideoLink": {
             "type": "string"
           },
           "pages": {

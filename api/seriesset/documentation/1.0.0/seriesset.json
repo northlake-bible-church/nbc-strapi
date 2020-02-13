@@ -594,7 +594,6 @@
             "required": [
               "id",
               "MessageTitle",
-              "AudioLink",
               "MessageDate"
             ],
             "properties": {
@@ -605,9 +604,6 @@
                 "type": "string"
               },
               "teacher": {
-                "type": "string"
-              },
-              "AudioLink": {
                 "type": "string"
               },
               "biblebooks": {
@@ -631,9 +627,6 @@
               "PublishDate": {
                 "type": "string"
               },
-              "VideoLink": {
-                "type": "string"
-              },
               "MessageSlides": {
                 "type": "string"
               },
@@ -647,6 +640,12 @@
                 "type": "string"
               },
               "PodcastLink": {
+                "type": "string"
+              },
+              "SermonAudio": {
+                "type": "string"
+              },
+              "SermonVideo": {
                 "type": "string"
               }
             }
