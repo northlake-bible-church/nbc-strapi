@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "02/12/2020 8:19:21 PM"
+    "x-generation-date": "02/12/2020 9:58:41 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -8768,7 +8768,7 @@
           "PodcastLink": {
             "type": "string"
           },
-          "SermonAudio": {
+          "MessageAudio": {
             "required": [
               "id",
               "name",
@@ -8814,7 +8814,7 @@
               }
             }
           },
-          "SermonVideo": {
+          "MessageVideo": {
             "required": [
               "id",
               "name",
@@ -9297,10 +9297,10 @@
                 "PodcastLink": {
                   "type": "string"
                 },
-                "SermonAudio": {
+                "MessageAudio": {
                   "type": "string"
                 },
-                "SermonVideo": {
+                "MessageVideo": {
                   "type": "string"
                 }
               }
@@ -9479,10 +9479,10 @@
               "PodcastLink": {
                 "type": "string"
               },
-              "SermonAudio": {
+              "MessageAudio": {
                 "type": "string"
               },
-              "SermonVideo": {
+              "MessageVideo": {
                 "type": "string"
               }
             }
@@ -9818,10 +9818,10 @@
               "PodcastLink": {
                 "type": "string"
               },
-              "SermonAudio": {
+              "MessageAudio": {
                 "type": "string"
               },
-              "SermonVideo": {
+              "MessageVideo": {
                 "type": "string"
               }
             }

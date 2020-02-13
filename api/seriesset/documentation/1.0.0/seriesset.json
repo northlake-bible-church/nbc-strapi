@@ -642,10 +642,10 @@
               "PodcastLink": {
                 "type": "string"
               },
-              "SermonAudio": {
+              "MessageAudio": {
                 "type": "string"
               },
-              "SermonVideo": {
+              "MessageVideo": {
                 "type": "string"
               }
             }

@@ -62,13 +62,13 @@
     "PodcastLink": {
       "type": "string"
     },
-    "SermonAudio": {
+    "MessageAudio": {
       "model": "file",
       "via": "related",
       "plugin": "upload",
       "required": false
     },
-    "SermonVideo": {
+    "MessageVideo": {
       "model": "file",
       "via": "related",
       "plugin": "upload",
