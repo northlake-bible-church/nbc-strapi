@@ -36,7 +36,8 @@
       "required": false
     },
     "AnnouncementLink": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }

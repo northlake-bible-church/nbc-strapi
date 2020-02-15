@@ -518,7 +518,8 @@
         "required": [
           "id",
           "AnnouncementTitle",
-          "Description"
+          "Description",
+          "AnnouncementLink"
         ],
         "properties": {
           "id": {
@@ -596,7 +597,8 @@
       "NewAnnouncement": {
         "required": [
           "AnnouncementTitle",
-          "Description"
+          "Description",
+          "AnnouncementLink"
         ],
         "properties": {
           "AnnouncementTitle": {
