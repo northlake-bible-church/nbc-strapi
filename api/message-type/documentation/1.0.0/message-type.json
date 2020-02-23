@@ -603,6 +603,9 @@
                 },
                 "message_type": {
                   "type": "string"
+                },
+                "ExpireDate": {
+                  "type": "string"
                 }
               }
             }

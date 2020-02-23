@@ -850,6 +850,9 @@
                 }
               }
             }
+          },
+          "ExpireDate": {
+            "type": "string"
           }
         }
       },
@@ -902,6 +905,9 @@
             "type": "string"
           },
           "message_type": {
+            "type": "string"
+          },
+          "ExpireDate": {
             "type": "string"
           }
         }

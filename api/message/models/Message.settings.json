@@ -78,6 +78,9 @@
     "message_type": {
       "model": "message-type",
       "via": "messages"
+    },
+    "ExpireDate": {
+      "type": "date"
     }
   }
 }
