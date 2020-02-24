@@ -650,6 +650,12 @@
                 }
               }
             }
+          },
+          "Prefix": {
+            "type": "string"
+          },
+          "Suffix": {
+            "type": "string"
           }
         }
       },
@@ -673,6 +679,12 @@
             "items": {
               "type": "string"
             }
+          },
+          "Prefix": {
+            "type": "string"
+          },
+          "Suffix": {
+            "type": "string"
           }
         }
       }

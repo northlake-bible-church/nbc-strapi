@@ -17,8 +17,8 @@
       "required": true
     },
     "teachers": {
-      "collection": "teacher",
       "via": "messages",
+      "collection": "teacher",
       "dominant": true
     },
     "biblebooks": {

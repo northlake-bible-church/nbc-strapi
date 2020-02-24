@@ -555,6 +555,12 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "Prefix": {
+                "type": "string"
+              },
+              "Suffix": {
+                "type": "string"
               }
             }
           },

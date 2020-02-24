@@ -1,6 +1,6 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "teacher",
   "info": {
     "name": "teacher",
     "description": ""
@@ -20,14 +20,21 @@
     "Picture": {
       "model": "file",
       "via": "related",
-      "plugin": "upload"
+      "plugin": "upload",
+      "required": false
     },
     "Biography": {
       "type": "richtext"
     },
     "messages": {
-      "via": "teachers",
-      "collection": "message"
+      "collection": "message",
+      "via": "teachers"
+    },
+    "Prefix": {
+      "type": "string"
+    },
+    "Suffix": {
+      "type": "string"
     }
   }
 }
