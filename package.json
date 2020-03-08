@@ -2,7 +2,7 @@
   "name": "nbc-strapi",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Northlake Bible Church CMS",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -33,7 +33,7 @@
     "strapi-utils": "3.0.0-beta.19.3"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Northlake Bible Church"
   },
   "strapi": {
     "uuid": "8c7c2968-73f1-4345-af8a-092c0d0f100e"
