@@ -585,6 +585,33 @@
           },
           "ExpiredDate": {
             "type": "string"
+          },
+          "OverlayOnDesktop": {
+            "type": "string",
+            "default": "None",
+            "enum": [
+              "None",
+              "Light",
+              "Heavy"
+            ]
+          },
+          "OverlayOnMobile": {
+            "type": "string",
+            "default": "None",
+            "enum": [
+              "None",
+              "Light",
+              "Heavy"
+            ]
+          },
+          "OverlayOnTablet": {
+            "type": "string",
+            "default": "None",
+            "enum": [
+              "None",
+              "Light",
+              "Heavy"
+            ]
           }
         }
       },
@@ -607,6 +634,33 @@
           },
           "ExpiredDate": {
             "type": "string"
+          },
+          "OverlayOnDesktop": {
+            "type": "string",
+            "default": "None",
+            "enum": [
+              "None",
+              "Light",
+              "Heavy"
+            ]
+          },
+          "OverlayOnMobile": {
+            "type": "string",
+            "default": "None",
+            "enum": [
+              "None",
+              "Light",
+              "Heavy"
+            ]
+          },
+          "OverlayOnTablet": {
+            "type": "string",
+            "default": "None",
+            "enum": [
+              "None",
+              "Light",
+              "Heavy"
+            ]
           }
         }
       }

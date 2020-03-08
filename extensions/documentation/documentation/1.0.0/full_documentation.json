@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "02/23/2020 8:53:51 PM"
+    "x-generation-date": "02/29/2020 4:28:50 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -10370,6 +10370,33 @@
           },
           "ExpiredDate": {
             "type": "string"
+          },
+          "OverlayOnDesktop": {
+            "type": "string",
+            "default": "None",
+            "enum": [
+              "None",
+              "Light",
+              "Heavy"
+            ]
+          },
+          "OverlayOnMobile": {
+            "type": "string",
+            "default": "None",
+            "enum": [
+              "None",
+              "Light",
+              "Heavy"
+            ]
+          },
+          "OverlayOnTablet": {
+            "type": "string",
+            "default": "None",
+            "enum": [
+              "None",
+              "Light",
+              "Heavy"
+            ]
           }
         }
       },
@@ -10392,6 +10419,33 @@
           },
           "ExpiredDate": {
             "type": "string"
+          },
+          "OverlayOnDesktop": {
+            "type": "string",
+            "default": "None",
+            "enum": [
+              "None",
+              "Light",
+              "Heavy"
+            ]
+          },
+          "OverlayOnMobile": {
+            "type": "string",
+            "default": "None",
+            "enum": [
+              "None",
+              "Light",
+              "Heavy"
+            ]
+          },
+          "OverlayOnTablet": {
+            "type": "string",
+            "default": "None",
+            "enum": [
+              "None",
+              "Light",
+              "Heavy"
+            ]
           }
         }
       },
