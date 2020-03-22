@@ -326,9 +326,6 @@
           },
           "BannerLink": {
             "type": "string"
-          },
-          "BannerLinkText": {
-            "type": "string"
           }
         }
       },
@@ -341,9 +338,6 @@
             "type": "string"
           },
           "BannerLink": {
-            "type": "string"
-          },
-          "BannerLinkText": {
             "type": "string"
           }
         }
