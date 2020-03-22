@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "connection": "default",
+  "collectionName": "modal_alerts",
+  "info": {
+    "name": "ModalAlert"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "ModalHeader": {
+      "type": "string"
+    },
+    "ModalBody": {
+      "type": "string"
+    },
+    "ModalLink": {
+      "type": "string"
+    },
+    "ModalEnabled": {
+      "type": "boolean"
+    },
+    "ModalLinkText": {
+      "type": "string"
+    }
+  }
+}

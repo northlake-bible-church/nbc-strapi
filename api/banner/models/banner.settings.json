@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "connection": "default",
+  "collectionName": "banners",
+  "info": {
+    "name": "Banner"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "BannerEnabled": {
+      "type": "boolean"
+    },
+    "BannerText": {
+      "type": "string"
+    },
+    "BannerLink": {
+      "type": "string"
+    },
+    "BannerLinkText": {
+      "type": "string"
+    }
+  }
+}

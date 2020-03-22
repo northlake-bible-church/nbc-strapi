@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/modal-alert",
+      "handler": "modal-alert.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/modal-alert",
+      "handler": "modal-alert.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/modal-alert",
+      "handler": "modal-alert.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

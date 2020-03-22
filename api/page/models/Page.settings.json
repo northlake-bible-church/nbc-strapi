@@ -1,4 +1,5 @@
 {
+  "kind": "collectionType",
   "connection": "default",
   "collectionName": "page",
   "info": {
@@ -49,6 +50,10 @@
     "PageContent": {
       "type": "richtext",
       "required": true
+    },
+    "videos": {
+      "via": "pages",
+      "collection": "video"
     }
   }
 }

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "videos",
+  "info": {
+    "name": "Video"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "VideoTitle": {
+      "type": "string"
+    },
+    "VideoUrl": {
+      "type": "string"
+    },
+    "PublishDate": {
+      "type": "date"
+    },
+    "ExpireDate": {
+      "type": "date"
+    },
+    "pages": {
+      "collection": "page",
+      "via": "videos",
+      "dominant": true
+    }
+  }
+}

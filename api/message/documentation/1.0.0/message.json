@@ -705,6 +705,12 @@
                 },
                 "PageContent": {
                   "type": "string"
+                },
+                "videos": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 }
               }
             }

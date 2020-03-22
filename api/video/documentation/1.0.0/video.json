@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/pages": {
+    "/videos": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Page"
+                    "$ref": "#/components/schemas/Video"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Page"
+          "Video"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Page"
+                  "$ref": "#/components/schemas/Video"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Page"
+          "Video"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewPage"
+                "$ref": "#/components/schemas/NewVideo"
               }
             }
           }
         }
       }
     },
-    "/pages/count": {
+    "/videos/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Page"
+          "Video"
         ],
         "parameters": []
       }
     },
-    "/pages/{id}": {
+    "/videos/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Page"
+                  "$ref": "#/components/schemas/Video"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Page"
+          "Video"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Page"
+                  "$ref": "#/components/schemas/Video"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Page"
+          "Video"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewPage"
+                "$ref": "#/components/schemas/NewVideo"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Page"
+          "Video"
         ],
         "parameters": [
           {
@@ -514,75 +514,25 @@
   },
   "components": {
     "schemas": {
-      "Page": {
+      "Video": {
         "required": [
-          "id",
-          "PageTitle",
-          "PageUrl",
-          "PublishDate",
-          "PageContent"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "PageTitle": {
+          "VideoTitle": {
             "type": "string"
           },
-          "PageUrl": {
+          "VideoUrl": {
             "type": "string"
           },
           "PublishDate": {
             "type": "string"
           },
-          "ExpiredDate": {
+          "ExpireDate": {
             "type": "string"
-          },
-          "Image": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "sha256": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              }
-            }
           },
           "pages": {
             "type": "array",
@@ -639,207 +589,24 @@
                 }
               }
             }
-          },
-          "page": {
-            "required": [
-              "id",
-              "PageTitle",
-              "PageUrl",
-              "PublishDate",
-              "PageContent"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "PageTitle": {
-                "type": "string"
-              },
-              "PageUrl": {
-                "type": "string"
-              },
-              "PublishDate": {
-                "type": "string"
-              },
-              "ExpiredDate": {
-                "type": "string"
-              },
-              "Image": {
-                "type": "string"
-              },
-              "pages": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "page": {
-                "type": "string"
-              },
-              "messages": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "PageContent": {
-                "type": "string"
-              },
-              "videos": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "messages": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "MessageTitle",
-                "MessageDate"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "MessageTitle": {
-                  "type": "string"
-                },
-                "teachers": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "biblebooks": {
-                  "type": "string"
-                },
-                "ChapterStart": {
-                  "type": "integer"
-                },
-                "ChapterEnd": {
-                  "type": "integer"
-                },
-                "VerseStart": {
-                  "type": "integer"
-                },
-                "VerseEnd": {
-                  "type": "integer"
-                },
-                "MessageDate": {
-                  "type": "string"
-                },
-                "PublishDate": {
-                  "type": "string"
-                },
-                "MessageSlides": {
-                  "type": "string"
-                },
-                "pages": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "seriesset": {
-                  "type": "string"
-                },
-                "PodcastLink": {
-                  "type": "string"
-                },
-                "MessageAudio": {
-                  "type": "string"
-                },
-                "MessageVideo": {
-                  "type": "string"
-                },
-                "message_type": {
-                  "type": "string"
-                },
-                "ExpireDate": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "PageContent": {
-            "type": "string"
-          },
-          "videos": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "VideoTitle": {
-                  "type": "string"
-                },
-                "VideoUrl": {
-                  "type": "string"
-                },
-                "PublishDate": {
-                  "type": "string"
-                },
-                "ExpireDate": {
-                  "type": "string"
-                },
-                "pages": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
           }
         }
       },
-      "NewPage": {
-        "required": [
-          "PageTitle",
-          "PageUrl",
-          "PublishDate",
-          "PageContent"
-        ],
+      "NewVideo": {
         "properties": {
-          "PageTitle": {
+          "VideoTitle": {
             "type": "string"
           },
-          "PageUrl": {
+          "VideoUrl": {
             "type": "string"
           },
           "PublishDate": {
             "type": "string"
           },
-          "ExpiredDate": {
+          "ExpireDate": {
             "type": "string"
           },
           "pages": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "page": {
-            "type": "string"
-          },
-          "messages": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "PageContent": {
-            "type": "string"
-          },
-          "videos": {
             "type": "array",
             "items": {
               "type": "string"
@@ -851,7 +618,7 @@
   },
   "tags": [
     {
-      "name": "Page"
+      "name": "Video"
     }
   ]
 }
