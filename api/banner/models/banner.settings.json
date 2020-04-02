@@ -18,6 +18,9 @@
     },
     "BannerLink": {
       "type": "string"
+    },
+    "BroadcastTime": {
+      "type": "datetime"
     }
   }
 }

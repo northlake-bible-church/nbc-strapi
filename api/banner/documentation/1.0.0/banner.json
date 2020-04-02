@@ -326,6 +326,9 @@
           },
           "BannerLink": {
             "type": "string"
+          },
+          "BroadcastTime": {
+            "type": "datetime"
           }
         }
       },
@@ -339,6 +342,9 @@
           },
           "BannerLink": {
             "type": "string"
+          },
+          "BroadcastTime": {
+            "type": "datetime"
           }
         }
       }
