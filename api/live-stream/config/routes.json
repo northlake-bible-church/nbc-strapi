@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/live-stream",
+      "handler": "live-stream.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/live-stream",
+      "handler": "live-stream.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/live-stream",
+      "handler": "live-stream.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

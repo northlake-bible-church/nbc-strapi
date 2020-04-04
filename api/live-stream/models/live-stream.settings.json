@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "connection": "default",
+  "collectionName": "live_streams",
+  "info": {
+    "name": "LiveStream"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Streaming": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "LiveStreamUrl": {
+      "type": "string"
+    }
+  }
+}
