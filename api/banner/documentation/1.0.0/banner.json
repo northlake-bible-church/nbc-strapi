@@ -329,6 +329,12 @@
           },
           "BroadcastTime": {
             "type": "datetime"
+          },
+          "BannerTextAfterTimer": {
+            "type": "string"
+          },
+          "TimerEnabled": {
+            "type": "boolean"
           }
         }
       },
@@ -345,6 +351,12 @@
           },
           "BroadcastTime": {
             "type": "datetime"
+          },
+          "BannerTextAfterTimer": {
+            "type": "string"
+          },
+          "TimerEnabled": {
+            "type": "boolean"
           }
         }
       }
