@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/livestream-events",
+      "handler": "livestream-event.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/livestream-events/count",
+      "handler": "livestream-event.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/livestream-events/:id",
+      "handler": "livestream-event.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/livestream-events",
+      "handler": "livestream-event.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/livestream-events/:id",
+      "handler": "livestream-event.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/livestream-events/:id",
+      "handler": "livestream-event.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

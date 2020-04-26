@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "livestream_events",
+  "info": {
+    "name": "LivestreamEvent"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "EventDay": {
+      "type": "enumeration",
+      "enum": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ]
+    },
+    "EventStartTime": {
+      "type": "time"
+    },
+    "EventEndTime": {
+      "type": "time"
+    },
+    "Recurring": {
+      "type": "boolean",
+      "default": true
+    },
+    "EventPlayer": {
+      "type": "string"
+    },
+    "EventTitle": {
+      "type": "string"
+    },
+    "EventData": {
+      "type": "date"
+    }
+  }
+}

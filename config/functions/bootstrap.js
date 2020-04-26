@@ -13,15 +13,17 @@
 const socketInit = async () => {
   // import socket io
   var io = require("socket.io")(strapi.server);
-  console.log(strapi.server);
+
   // listen for user connection
-  io.on("connection", function(socket) {
+  io.on("connection", function (socket) {
     // send message on user connection
-    socket.emit("hello", JSON.stringify({ message: "Test sockets" }));
+    socket.emit("hello", JSON.stringify({ message: "Test" }));
     // listen for user diconnect
     socket.on("disconnect", () => console.log("a user disconnected"));
   });
   strapi.io = io; // register socket io inside strapi main object to use it globally anywhere
+  // send to all users connected
+  strapi.emitToAllUsers = (banner) => io.emit("banner_ready", banner);
 };
 
 module.exports = () => {
