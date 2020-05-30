@@ -36,6 +36,9 @@
     },
     "text_color": {
       "model": "text-color"
+    },
+    "ButtonLinkText": {
+      "type": "string"
     }
   }
 }

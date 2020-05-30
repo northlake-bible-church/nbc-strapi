@@ -601,6 +601,9 @@
                 "type": "string"
               }
             }
+          },
+          "ButtonLinkText": {
+            "type": "string"
           }
         }
       },
@@ -625,6 +628,9 @@
             "type": "string"
           },
           "text_color": {
+            "type": "string"
+          },
+          "ButtonLinkText": {
             "type": "string"
           }
         }
