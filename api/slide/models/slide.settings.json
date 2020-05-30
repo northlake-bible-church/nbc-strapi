@@ -1,4 +1,5 @@
 {
+  "kind": "collectionType",
   "connection": "default",
   "collectionName": "slides",
   "info": {
@@ -33,32 +34,8 @@
     "ExpiredDate": {
       "type": "date"
     },
-    "OverlayOnDesktop": {
-      "type": "enumeration",
-      "enum": [
-        "None",
-        "Light",
-        "Heavy"
-      ],
-      "default": "None"
-    },
-    "OverlayOnMobile": {
-      "type": "enumeration",
-      "enum": [
-        "None",
-        "Light",
-        "Heavy"
-      ],
-      "default": "None"
-    },
-    "OverlayOnTablet": {
-      "type": "enumeration",
-      "enum": [
-        "None",
-        "Light",
-        "Heavy"
-      ],
-      "default": "None"
+    "text_color": {
+      "model": "text-color"
     }
   }
 }

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "text_colors",
+  "info": {
+    "name": "TextColor"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "ColorName": {
+      "type": "string"
+    },
+    "ColorHex": {
+      "type": "string",
+      "maxLength": 7,
+      "minLength": 7
+    }
+  }
+}
