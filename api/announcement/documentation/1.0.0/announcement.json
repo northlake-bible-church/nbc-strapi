@@ -591,6 +591,9 @@
           },
           "AnnouncementLink": {
             "type": "string"
+          },
+          "AnnouncementLinkName": {
+            "type": "string"
           }
         }
       },
@@ -620,6 +623,9 @@
             "type": "string"
           },
           "AnnouncementLink": {
+            "type": "string"
+          },
+          "AnnouncementLinkName": {
             "type": "string"
           }
         }
