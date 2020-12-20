@@ -586,6 +586,12 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
                 }
               }
             }
@@ -611,6 +617,12 @@
             "items": {
               "type": "string"
             }
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
           }
         }
       }

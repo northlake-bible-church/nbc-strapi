@@ -583,6 +583,12 @@
               },
               "related": {
                 "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -613,6 +619,12 @@
                 "type": "string"
               },
               "ColorHex": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
                 "type": "string"
               }
             }
@@ -646,6 +658,12 @@
             "type": "string"
           },
           "ButtonLinkText": {
+            "type": "string"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
             "type": "string"
           }
         }

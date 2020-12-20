@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/20/2020 3:52:29 PM"
+    "x-generation-date": "12/20/2020 5:34:05 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -37,7 +37,7 @@
   ],
   "externalDocs": {
     "description": "Find out more",
-    "url": "https://strapi.io/documentation/3.0.0-beta.x/"
+    "url": "https://strapi.io/documentation/v3.x/"
   },
   "security": [
     {
@@ -10160,63 +10160,6 @@
         ]
       }
     },
-    "/users-permissions/init": {
-      "get": {
-        "deprecated": false,
-        "description": "Check if the first admin user has already been registered",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "UsersPermissions - Role"
-        ],
-        "parameters": []
-      }
-    },
     "/users-permissions/roles/{id}": {
       "get": {
         "deprecated": false,
@@ -11947,6 +11890,12 @@
               },
               "related": {
                 "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -11987,6 +11936,12 @@
             "type": "string"
           },
           "AnnouncementLinkName": {
+            "type": "string"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
             "type": "string"
           }
         }
@@ -12031,6 +11986,12 @@
             "type": "string"
           },
           "ExpiredDate": {
+            "type": "string"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
             "type": "string"
           }
         }
@@ -12082,6 +12043,12 @@
           },
           "TimerEnabled": {
             "type": "boolean"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
           }
         }
       },
@@ -12144,6 +12111,12 @@
               "NT",
               "OT"
             ]
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
           }
         }
       },
@@ -12170,6 +12143,12 @@
           },
           "FeatureEnabled": {
             "type": "boolean"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
           }
         }
       },
@@ -12201,6 +12180,12 @@
             "default": false
           },
           "LiveStreamUrl": {
+            "type": "string"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
             "type": "string"
           }
         }
@@ -12277,6 +12262,12 @@
             "type": "string"
           },
           "EventData": {
+            "type": "string"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
             "type": "string"
           }
         }
@@ -12360,6 +12351,12 @@
                 },
                 "ExpireDate": {
                   "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
                 }
               }
             }
@@ -12376,6 +12373,12 @@
             "items": {
               "type": "string"
             }
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
           }
         }
       },
@@ -12427,6 +12430,12 @@
                 },
                 "Suffix": {
                   "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
                 }
               }
             }
@@ -12456,6 +12465,12 @@
                 "type": "integer"
               },
               "Volume": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
                 "type": "string"
               }
             }
@@ -12536,6 +12551,12 @@
               },
               "related": {
                 "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -12591,6 +12612,12 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
                 }
               }
             }
@@ -12625,6 +12652,12 @@
                 "type": "string"
               },
               "Description": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
                 "type": "string"
               }
             }
@@ -12690,6 +12723,12 @@
               },
               "related": {
                 "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -12751,6 +12790,12 @@
               },
               "related": {
                 "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -12770,6 +12815,12 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -12831,6 +12882,12 @@
           },
           "ExpireDate": {
             "type": "string"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
           }
         }
       },
@@ -12874,6 +12931,12 @@
             "type": "boolean"
           },
           "ModalLinkText": {
+            "type": "string"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
             "type": "string"
           }
         }
@@ -12929,6 +12992,12 @@
                 },
                 "NavOrder": {
                   "type": "integer"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
                 }
               }
             }
@@ -12960,6 +13029,12 @@
             "items": {
               "type": "string"
             }
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
           }
         }
       },
@@ -13012,6 +13087,12 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -13042,6 +13123,12 @@
           },
           "NavOrder": {
             "type": "integer"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
           }
         }
       },
@@ -13127,6 +13214,12 @@
               },
               "related": {
                 "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -13182,6 +13275,12 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
                 }
               }
             }
@@ -13236,6 +13335,12 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -13307,6 +13412,12 @@
                 },
                 "ExpireDate": {
                   "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
                 }
               }
             }
@@ -13341,6 +13452,12 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
                 }
               }
             }
@@ -13390,6 +13507,12 @@
             "items": {
               "type": "string"
             }
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
           }
         }
       },
@@ -13440,6 +13563,12 @@
               },
               "Suffix": {
                 "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -13474,6 +13603,12 @@
                 "type": "integer"
               },
               "Volume": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
                 "type": "string"
               }
             }
@@ -13544,6 +13679,12 @@
               },
               "ExpireDate": {
                 "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -13579,6 +13720,12 @@
           },
           "Description": {
             "type": "string"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
           }
         }
       },
@@ -13607,6 +13754,12 @@
                 "type": "string"
               },
               "Name": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
                 "type": "string"
               }
             }
@@ -13638,6 +13791,12 @@
           },
           "Description": {
             "type": "string"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
           }
         }
       },
@@ -13661,6 +13820,12 @@
         ],
         "properties": {
           "Name": {
+            "type": "string"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
             "type": "string"
           }
         }
@@ -13734,6 +13899,12 @@
               },
               "related": {
                 "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -13764,6 +13935,12 @@
                 "type": "string"
               },
               "ColorHex": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
                 "type": "string"
               }
             }
@@ -13797,6 +13974,12 @@
             "type": "string"
           },
           "ButtonLinkText": {
+            "type": "string"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
             "type": "string"
           }
         }
@@ -13875,6 +14058,12 @@
               },
               "related": {
                 "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -13949,6 +14138,12 @@
                 },
                 "ExpireDate": {
                   "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
                 }
               }
             }
@@ -13987,6 +14182,12 @@
           },
           "Suffix": {
             "type": "string"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
           }
         }
       },
@@ -14017,6 +14218,12 @@
             "type": "string",
             "maxLength": 7,
             "minLength": 7
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
           }
         }
       },
@@ -14092,6 +14299,12 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
                 }
               }
             }
@@ -14117,6 +14330,12 @@
             "items": {
               "type": "string"
             }
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
           }
         }
       },
@@ -14170,6 +14389,12 @@
                 },
                 "role": {
                   "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
                 }
               }
             }
@@ -14209,6 +14434,12 @@
                 },
                 "role": {
                   "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
                 }
               }
             }
@@ -14241,6 +14472,12 @@
             "items": {
               "type": "string"
             }
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
           }
         }
       },
@@ -14302,6 +14539,12 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           }
@@ -14340,6 +14583,12 @@
             "default": false
           },
           "role": {
+            "type": "string"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
             "type": "string"
           }
         }
