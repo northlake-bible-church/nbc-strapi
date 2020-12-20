@@ -601,6 +601,12 @@
               },
               "related": {
                 "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -641,6 +647,12 @@
             "type": "string"
           },
           "AnnouncementLinkName": {
+            "type": "string"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
             "type": "string"
           }
         }
