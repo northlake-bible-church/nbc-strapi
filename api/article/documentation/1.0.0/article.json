@@ -528,13 +528,15 @@
             "type": "string"
           },
           "PublishDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "Article": {
             "type": "string"
           },
           "ExpiredDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           }
         }
       },
@@ -548,13 +550,15 @@
             "type": "string"
           },
           "PublishDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "Article": {
             "type": "string"
           },
           "ExpiredDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "created_by": {
             "type": "string"

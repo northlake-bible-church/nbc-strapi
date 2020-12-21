@@ -620,10 +620,12 @@
             "type": "integer"
           },
           "MessageDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "PublishDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "MessageSlides": {
             "required": [
@@ -957,7 +959,8 @@
             }
           },
           "ExpireDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           }
         }
       },
@@ -992,10 +995,12 @@
             "type": "integer"
           },
           "MessageDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "PublishDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "pages": {
             "type": "array",
@@ -1013,7 +1018,8 @@
             "type": "string"
           },
           "ExpireDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "created_by": {
             "type": "string"

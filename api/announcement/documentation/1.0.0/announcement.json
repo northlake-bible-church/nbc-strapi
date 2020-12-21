@@ -532,16 +532,20 @@
             "type": "string"
           },
           "PublishedDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "ExpiredDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "EventEndDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "EventStartDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "AnnouncementsImage": {
             "required": [
@@ -632,16 +636,20 @@
             "type": "string"
           },
           "PublishedDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "ExpiredDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "EventEndDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "EventStartDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "AnnouncementLink": {
             "type": "string"

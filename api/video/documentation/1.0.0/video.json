@@ -529,10 +529,12 @@
             "type": "string"
           },
           "PublishDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "ExpireDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "pages": {
             "type": "array",
@@ -607,10 +609,12 @@
             "type": "string"
           },
           "PublishDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "ExpireDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "pages": {
             "type": "array",

@@ -548,10 +548,10 @@
             ]
           },
           "EventStartTime": {
-            "type": "time"
+            "type": "string"
           },
           "EventEndTime": {
-            "type": "time"
+            "type": "string"
           },
           "Recurring": {
             "type": "boolean",
@@ -564,7 +564,8 @@
             "type": "string"
           },
           "EventData": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           }
         }
       },
@@ -583,10 +584,10 @@
             ]
           },
           "EventStartTime": {
-            "type": "time"
+            "type": "string"
           },
           "EventEndTime": {
-            "type": "time"
+            "type": "string"
           },
           "Recurring": {
             "type": "boolean",
@@ -599,7 +600,8 @@
             "type": "string"
           },
           "EventData": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "created_by": {
             "type": "string"
