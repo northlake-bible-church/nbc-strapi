@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/20/2020 9:06:24 PM"
+    "x-generation-date": "12/20/2020 9:17:34 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -11821,16 +11821,20 @@
             "type": "string"
           },
           "PublishedDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "ExpiredDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "EventEndDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "EventStartDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "AnnouncementsImage": {
             "required": [
@@ -11921,16 +11925,20 @@
             "type": "string"
           },
           "PublishedDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "ExpiredDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "EventEndDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "EventStartDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "AnnouncementLink": {
             "type": "string"
@@ -11960,13 +11968,15 @@
             "type": "string"
           },
           "PublishDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "Article": {
             "type": "string"
           },
           "ExpiredDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           }
         }
       },
@@ -11980,13 +11990,15 @@
             "type": "string"
           },
           "PublishDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "Article": {
             "type": "string"
           },
           "ExpiredDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "created_by": {
             "type": "string"
@@ -12014,7 +12026,8 @@
             "type": "string"
           },
           "BroadcastTime": {
-            "type": "datetime"
+            "type": "string",
+            "format": "date-time"
           },
           "BannerTextAfterTimer": {
             "type": "string"
@@ -12036,7 +12049,8 @@
             "type": "string"
           },
           "BroadcastTime": {
-            "type": "datetime"
+            "type": "string",
+            "format": "date-time"
           },
           "BannerTextAfterTimer": {
             "type": "string"
@@ -12211,10 +12225,10 @@
             ]
           },
           "EventStartTime": {
-            "type": "time"
+            "type": "string"
           },
           "EventEndTime": {
-            "type": "time"
+            "type": "string"
           },
           "Recurring": {
             "type": "boolean",
@@ -12227,7 +12241,8 @@
             "type": "string"
           },
           "EventData": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           }
         }
       },
@@ -12246,10 +12261,10 @@
             ]
           },
           "EventStartTime": {
-            "type": "time"
+            "type": "string"
           },
           "EventEndTime": {
-            "type": "time"
+            "type": "string"
           },
           "Recurring": {
             "type": "boolean",
@@ -12262,7 +12277,8 @@
             "type": "string"
           },
           "EventData": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "created_by": {
             "type": "string"
@@ -12488,10 +12504,12 @@
             "type": "integer"
           },
           "MessageDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "PublishDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "MessageSlides": {
             "required": [
@@ -12825,7 +12843,8 @@
             }
           },
           "ExpireDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           }
         }
       },
@@ -12860,10 +12879,12 @@
             "type": "integer"
           },
           "MessageDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "PublishDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "pages": {
             "type": "array",
@@ -12881,7 +12902,8 @@
             "type": "string"
           },
           "ExpireDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "created_by": {
             "type": "string"
@@ -13151,10 +13173,12 @@
             "type": "string"
           },
           "PublishDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "ExpiredDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "Image": {
             "required": [
@@ -13479,10 +13503,12 @@
             "type": "string"
           },
           "PublishDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "ExpiredDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "pages": {
             "type": "array",
@@ -13573,10 +13599,12 @@
             }
           },
           "SeriesStart": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "SeriesEnd": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "biblebooks": {
             "required": [
@@ -13707,10 +13735,12 @@
             "type": "string"
           },
           "SeriesStart": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "SeriesEnd": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "biblebooks": {
             "type": "string"
@@ -13918,10 +13948,12 @@
             "type": "string"
           },
           "PublishDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "ExpiredDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "text_color": {
             "required": [
@@ -13965,10 +13997,12 @@
             "type": "string"
           },
           "PublishDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "ExpiredDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "text_color": {
             "type": "string"
@@ -14242,10 +14276,12 @@
             "type": "string"
           },
           "PublishDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "ExpireDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "pages": {
             "type": "array",
@@ -14320,10 +14356,12 @@
             "type": "string"
           },
           "PublishDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "ExpireDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "pages": {
             "type": "array",
@@ -14424,6 +14462,9 @@
                   "type": "string"
                 },
                 "resetPasswordToken": {
+                  "type": "string"
+                },
+                "confirmationToken": {
                   "type": "string"
                 },
                 "confirmed": {
@@ -14569,9 +14610,13 @@
           },
           "password": {
             "type": "string",
+            "format": "password",
             "minLength": 6
           },
           "resetPasswordToken": {
+            "type": "string"
+          },
+          "confirmationToken": {
             "type": "string"
           },
           "confirmed": {

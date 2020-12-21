@@ -602,10 +602,12 @@
             "type": "string"
           },
           "PublishDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "ExpiredDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "text_color": {
             "required": [
@@ -649,10 +651,12 @@
             "type": "string"
           },
           "PublishDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "ExpiredDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "text_color": {
             "type": "string"

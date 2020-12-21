@@ -571,10 +571,12 @@
             }
           },
           "SeriesStart": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "SeriesEnd": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "biblebooks": {
             "required": [
@@ -705,10 +707,12 @@
             "type": "string"
           },
           "SeriesStart": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "SeriesEnd": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "biblebooks": {
             "type": "string"

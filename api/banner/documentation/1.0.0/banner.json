@@ -328,7 +328,8 @@
             "type": "string"
           },
           "BroadcastTime": {
-            "type": "datetime"
+            "type": "string",
+            "format": "date-time"
           },
           "BannerTextAfterTimer": {
             "type": "string"
@@ -350,7 +351,8 @@
             "type": "string"
           },
           "BroadcastTime": {
-            "type": "datetime"
+            "type": "string",
+            "format": "date-time"
           },
           "BannerTextAfterTimer": {
             "type": "string"
