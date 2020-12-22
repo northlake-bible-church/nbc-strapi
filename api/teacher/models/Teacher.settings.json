@@ -21,7 +21,8 @@
       "model": "file",
       "via": "related",
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "sortable": true
     },
     "Biography": {
       "type": "richtext"

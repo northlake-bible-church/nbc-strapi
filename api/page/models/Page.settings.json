@@ -33,7 +33,8 @@
       "model": "file",
       "via": "related",
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "sortable": true
     },
     "pages": {
       "collection": "page",
