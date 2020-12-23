@@ -1,4 +1,5 @@
 {
+  "kind": "collectionType",
   "connection": "default",
   "collectionName": "teacher",
   "info": {
@@ -28,8 +29,8 @@
       "type": "richtext"
     },
     "messages": {
-      "collection": "message",
-      "via": "teachers"
+      "via": "teachers",
+      "collection": "message"
     },
     "Prefix": {
       "type": "string"

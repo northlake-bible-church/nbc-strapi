@@ -617,7 +617,8 @@
             "required": [
               "id",
               "MessageTitle",
-              "MessageDate"
+              "MessageDate",
+              "MainPage"
             ],
             "properties": {
               "id": {
@@ -674,11 +675,11 @@
               "MessageVideo": {
                 "type": "string"
               },
-              "message_type": {
-                "type": "string"
-              },
               "ExpireDate": {
                 "type": "string"
+              },
+              "MainPage": {
+                "type": "boolean"
               },
               "created_by": {
                 "type": "string"

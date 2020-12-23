@@ -518,7 +518,8 @@
         "required": [
           "id",
           "MessageTitle",
-          "MessageDate"
+          "MessageDate",
+          "MainPage"
         ],
         "properties": {
           "id": {
@@ -933,41 +934,21 @@
               }
             }
           },
-          "message_type": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "MessageTypeName": {
-                "type": "string"
-              },
-              "messages": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "ExpireDate": {
             "type": "string",
             "format": "date"
+          },
+          "MainPage": {
+            "type": "boolean",
+            "default": true
           }
         }
       },
       "NewMessage": {
         "required": [
           "MessageTitle",
-          "MessageDate"
+          "MessageDate",
+          "MainPage"
         ],
         "properties": {
           "MessageTitle": {
@@ -1014,12 +995,13 @@
           "PodcastLink": {
             "type": "string"
           },
-          "message_type": {
-            "type": "string"
-          },
           "ExpireDate": {
             "type": "string",
             "format": "date"
+          },
+          "MainPage": {
+            "type": "boolean",
+            "default": true
           },
           "created_by": {
             "type": "string"
