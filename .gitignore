@@ -110,7 +110,6 @@ coverage
 exports
 .cache
 build
-.env
 
 ############################
 # Heroku
