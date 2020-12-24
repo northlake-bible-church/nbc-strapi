@@ -11053,7 +11053,7 @@ strapi-provider-email-sendmail@3.4.1:
     sendmail "^1.6.1"
     strapi-utils "3.4.1"
 
-strapi-provider-upload-aws-s3@3.4.1:
+strapi-provider-upload-aws-s3@^3.4.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/strapi-provider-upload-aws-s3/-/strapi-provider-upload-aws-s3-3.4.1.tgz#d7c9c3532520176287f8b2e661ddce97600009bf"
   integrity sha512-JRFR4m3xcdMTSz7WoHgH7UaKjqsdl09ck9//46pmMlgwOpErhGwAMRBPaQ/HyTCX6Q/KKwydWrfcj+PSZdtWuw==
