@@ -115,4 +115,3 @@ build
 # Heroku
 ############################
 package-lock.json
-.env
