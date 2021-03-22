@@ -623,7 +623,10 @@
                   }
                 },
                 "biblebooks": {
-                  "type": "string"
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "ChapterStart": {
                   "type": "integer"

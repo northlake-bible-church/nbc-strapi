@@ -529,44 +529,47 @@
             "type": "string"
           },
           "teachers": {
-            "required": [
-              "id",
-              "FirstName",
-              "LastName"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "FirstName": {
-                "type": "string"
-              },
-              "LastName": {
-                "type": "string"
-              },
-              "Picture": {
-                "type": "string"
-              },
-              "Biography": {
-                "type": "string"
-              },
-              "messages": {
-                "type": "array",
-                "items": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "FirstName",
+                "LastName"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "FirstName": {
+                  "type": "string"
+                },
+                "LastName": {
+                  "type": "string"
+                },
+                "Picture": {
+                  "type": "string"
+                },
+                "Biography": {
+                  "type": "string"
+                },
+                "messages": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "Prefix": {
+                  "type": "string"
+                },
+                "Suffix": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
                   "type": "string"
                 }
-              },
-              "Prefix": {
-                "type": "string"
-              },
-              "Suffix": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
               }
             }
           },
@@ -579,37 +582,44 @@
             "format": "date"
           },
           "biblebooks": {
-            "required": [
-              "id",
-              "BookName",
-              "TotalChapters",
-              "OsisID",
-              "BookID"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "BookName": {
-                "type": "string"
-              },
-              "TotalChapters": {
-                "type": "integer"
-              },
-              "OsisID": {
-                "type": "string"
-              },
-              "BookID": {
-                "type": "integer"
-              },
-              "Volume": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "BookName",
+                "TotalChapters",
+                "OsisID",
+                "BookID"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "BookName": {
+                  "type": "string"
+                },
+                "TotalChapters": {
+                  "type": "integer"
+                },
+                "OsisID": {
+                  "type": "string"
+                },
+                "BookID": {
+                  "type": "integer"
+                },
+                "Volume": {
+                  "type": "string",
+                  "enum": [
+                    "NT",
+                    "OT"
+                  ]
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
               }
             }
           },
@@ -634,7 +644,10 @@
                 }
               },
               "biblebooks": {
-                "type": "string"
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "ChapterStart": {
                 "type": "integer"
@@ -705,7 +718,10 @@
             "type": "string"
           },
           "teachers": {
-            "type": "string"
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "SeriesStart": {
             "type": "string",
@@ -716,7 +732,10 @@
             "format": "date"
           },
           "biblebooks": {
-            "type": "string"
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "message": {
             "type": "string"
