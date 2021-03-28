@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "lodash": "^4.17.5",
-    "socket.io": "^2.3.0",
+    "socket.io": "^2.4.0",
     "strapi": "3.5.4",
     "strapi-admin": "3.5.4",
     "strapi-connector-mongoose": "3.5.4",
