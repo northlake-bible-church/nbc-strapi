@@ -23,8 +23,8 @@
       "type": "date"
     },
     "pages": {
-      "collection": "page",
       "via": "videos",
+      "collection": "page",
       "dominant": true
     }
   }

@@ -10,7 +10,8 @@
     "timestamps": [
       "createdAt",
       "updatedAt"
-    ]
+    ],
+    "draftAndPublish": false
   },
   "attributes": {
     "PageTitle": {
@@ -34,7 +35,7 @@
       "via": "related",
       "plugin": "upload",
       "required": false,
-      "sortable": true
+      "pluginOptions": {}
     },
     "pages": {
       "collection": "page",
@@ -55,6 +56,30 @@
     "videos": {
       "via": "pages",
       "collection": "video"
+    },
+    "ImageTablet": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "ImageMobile": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }

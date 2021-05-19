@@ -755,6 +755,12 @@
                     "type": "string"
                   }
                 },
+                "ImageTablet": {
+                  "type": "string"
+                },
+                "ImageMobile": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },

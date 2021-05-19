@@ -54,8 +54,8 @@
       "required": false
     },
     "pages": {
-      "collection": "page",
       "via": "messages",
+      "collection": "page",
       "dominant": true
     },
     "seriesset": {
