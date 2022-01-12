@@ -110,6 +110,7 @@ coverage
 exports
 .cache
 build
+.strapi-updater.json
 
 ############################
 # Heroku
