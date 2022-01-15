@@ -533,7 +533,8 @@
           "FirstName",
           "LastName",
           "ProfilePicture",
-          "Biography"
+          "Biography",
+          "Title"
         ],
         "properties": {
           "id": {
@@ -618,6 +619,9 @@
           "Email": {
             "type": "string"
           },
+          "Title": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -628,7 +632,8 @@
         "required": [
           "FirstName",
           "LastName",
-          "Biography"
+          "Biography",
+          "Title"
         ],
         "properties": {
           "FirstName": {
@@ -641,6 +646,9 @@
             "type": "string"
           },
           "Email": {
+            "type": "string"
+          },
+          "Title": {
             "type": "string"
           },
           "published_at": {
