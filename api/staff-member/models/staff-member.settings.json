@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "staff_members",
+  "info": {
+    "name": "StaffMember",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "FirstName": {
+      "type": "string",
+      "required": true
+    },
+    "LastName": {
+      "type": "string",
+      "required": true
+    },
+    "ProfilePicture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "Biography": {
+      "type": "richtext",
+      "required": true
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "PageURL": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    }
+  }
+}
