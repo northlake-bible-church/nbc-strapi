@@ -534,7 +534,8 @@
           "LastName",
           "ProfilePicture",
           "Biography",
-          "Title"
+          "Title",
+          "PageURL"
         ],
         "properties": {
           "id": {
@@ -622,6 +623,9 @@
           "Title": {
             "type": "string"
           },
+          "PageURL": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -633,7 +637,8 @@
           "FirstName",
           "LastName",
           "Biography",
-          "Title"
+          "Title",
+          "PageURL"
         ],
         "properties": {
           "FirstName": {
@@ -649,6 +654,9 @@
             "type": "string"
           },
           "Title": {
+            "type": "string"
+          },
+          "PageURL": {
             "type": "string"
           },
           "published_at": {

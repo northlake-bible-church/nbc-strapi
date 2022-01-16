@@ -41,6 +41,11 @@
     "Title": {
       "type": "string",
       "required": true
+    },
+    "PageURL": {
+      "type": "string",
+      "unique": true,
+      "required": true
     }
   }
 }
