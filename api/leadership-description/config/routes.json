@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/leadership-description",
+      "handler": "leadership-description.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/leadership-description",
+      "handler": "leadership-description.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/leadership-description",
+      "handler": "leadership-description.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

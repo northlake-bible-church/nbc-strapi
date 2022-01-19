@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "leadership_descriptions",
+  "info": {
+    "name": "Leadership Description"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}
