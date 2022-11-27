@@ -1,0 +1,8 @@
+version: "3"
+services:
+  strapi-db:
+    image: mongo:4.2.1
+    environment:
+      MONGO_DATA_DIR: /data/db
+    ports:
+      - "${PORT:-27017-27019}:${PORT:-27017-27019}"
