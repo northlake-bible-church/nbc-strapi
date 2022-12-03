@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/elder-description",
+      "handler": "elder-description.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/elder-description",
+      "handler": "elder-description.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/elder-description",
+      "handler": "elder-description.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

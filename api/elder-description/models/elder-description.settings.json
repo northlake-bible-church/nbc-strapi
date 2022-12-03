@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "elder_descriptions",
+  "info": {
+    "name": "Elder Description"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "ElderDescription": {
+      "type": "richtext"
+    }
+  }
+}

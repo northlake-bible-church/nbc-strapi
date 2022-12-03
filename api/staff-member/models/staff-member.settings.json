@@ -46,6 +46,14 @@
       "type": "string",
       "unique": true,
       "required": true
+    },
+    "Role": {
+      "type": "enumeration",
+      "enum": [
+        "Staff",
+        "Elder",
+        "Both"
+      ]
     }
   }
 }

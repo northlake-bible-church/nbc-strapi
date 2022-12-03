@@ -626,6 +626,14 @@
           "PageURL": {
             "type": "string"
           },
+          "Role": {
+            "type": "string",
+            "enum": [
+              "Staff",
+              "Elder",
+              "Both"
+            ]
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -658,6 +666,14 @@
           },
           "PageURL": {
             "type": "string"
+          },
+          "Role": {
+            "type": "string",
+            "enum": [
+              "Staff",
+              "Elder",
+              "Both"
+            ]
           },
           "published_at": {
             "type": "string",
